@@ -1,0 +1,70 @@
+{%load static from staticfiles %}
+
+<!--
+#{% static 'templates/images/
+#css/
+
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>GreetMacha</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href= "{% static 'templates/css/birthday_template_classic.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/3c0d91a51e.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style media="screen">
+  .home{
+    background:url("{% static 'templates/images/background_vector.png' %}");
+  }
+</style>
+</head>
+<body>
+<div class="home">
+  <div class="welcome-area">
+    <div class="container" >
+       <div class="row d-flex justify-content-center text-center">
+         <div class="col-lg-6 col-md-10 col-12 " >
+           <div class="frame">
+               <img src="/static/{{photo}}" alt="Sample" class="img-responsive frame_img ">
+           </div>
+         </div>
+         <div class="col-lg-6 col-6 my-auto">
+           <div class="text-greetings">
+              <h1>Happy Birthday </h1>
+              <span>{{name}}  </br></span>
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>
+
+  <section class="message">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+         {{message}}
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+{%load static from staticfiles %}
+
+<!--
+
+# {% static homescreen/css/
+# {% static 'homescreen/js
+# {% static 'homescreen/images/
+# {% static 'homescreen/fonts
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>GreetMacha</title>
+    <link rel="stylesheet" href="{% static 'homescreen/css/homescreen.css' %}">
+    <link rel="stylesheet" href="{% static 'homescreen/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'homescreen/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'homescreen/css/owl.theme.default.min.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src='https://kit.fontawesome.com/3c0d91a51e.js'></script>
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="welcome-area">
+    <header class="welcome-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#">GreetMacha</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active " href="#" >Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Catalouge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">ContactUs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="welcome-section" >
+      <div class="container">
+       <div class="row d-flex justify-content-center text-center">
+         <div class="col-lg-6 col-md-10 col-12 " >
+           <div class="welcome-section-text">
+              <h1 class="text-white">We celebrate your Happiness</h1>
+              <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</p>
+              <a href="#about" class="main-welcome-btn">Let us discuss together</a>
+           </div>
+         </div>
+         <div class="col-lg-6 col-6 my-auto " >
+           <div class="welcome-section-image">
+             <img src="{% static 'homescreen/images/working-girl.png' %}" class="img-fluid" alt="working girl">
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+  </div>
+
+<!-- ABOUT US -->
+  <section class="about section-padding">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center title-padding">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="row d-flex justify-content-center text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOUGE -->
+  <section class="project section-padding" id="project">
+     <div class="container-fluid">
+        <div class="row">
+           <div class="col-lg-12 col-12">
+               <h2 class="mb-5 text-center" data-aos="fade-up">
+                   Please take a look through our
+                   <strong>featured Digital Trends</strong>
+               </h2>
+
+                <div class="owl-carousel owl-theme" id="project-slide">
+                     <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                          <img src="{% static 'homescreen/images/templates/birthday_template_classic.jpg' %}" class="img-fluid" alt="project image">
+
+                          <div class="project-info">
+                             <small>Birthday</small>
+                             <h3>
+                                <a href="tp_1">
+                                   <span>Birthday Template 01</span>
+                                   <i class="fa fa-angle-right project-icon"></i>
+                                </a>
+                             </h3>
+                          </div>
+                     </div>
+
+                     <div class="item project-wrapper" data-aos="fade-up">
+                          <img src="{% static 'homescreen/images/templates/birthday_template_2.jpg' %}" class="img-fluid" alt="project image">
+
+                          <div class="project-info">
+                               <small>Birthday</small>
+                               <h3>
+                                  <a href="#">
+                                       <span>Birthday Template 02</span>
+                                       <i class="fa fa-angle-right project-icon"></i>
+                                  </a>
+                               </h3>
+                          </div>
+                     </div>
+
+                     <div class="item project-wrapper" data-aos="fade-up">
+                          <img src="{% static 'homescreen/images/templates/birthday_template_3.jpg' %}" class="img-fluid" alt="project image">
+
+                          <div class="project-info">
+                               <small>Birthday</small>
+
+                               <h3>
+                                    <a href="project-detail.html">
+                                         <span>Birthday Template 03</span>
+                                         <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                               </h3>
+                          </div>
+                     </div>
+
+                     <div class="item project-wrapper" data-aos="fade-up">
+                          <img src="{% static 'homescreen/images/templates/birthday_template_4.jpg' %}" class="img-fluid" alt="project image">
+
+                          <div class="project-info">
+                               <small>Birthday</small>
+
+                               <h3>
+                                    <a href="project-detail.html">
+                                         <span>Birthday Template 04</span>
+                                         <i class="fa fa-angle-right project-icon"></i>
+                                    </a>
+                               </h3>
+                          </div>
+                     </div>
+                </div>
+           </div>
+
+        </div>
+     </div>
+  </section>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Stay Updated With Us</h6>
+
+          <form class="form-inline">
+            <input class="form-control mr-sm-2 subscribe-margin" type="search" placeholder="Email Address" aria-label="Search"><br><br><br>
+            <button class="btn btn btn-outline-dark my-2 my-sm-0 subscribe-btn " type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">GreetMacha</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'homescreen/js/jquery.min.js' %}"></script>
+  <script src="{% static 'homescreen/js/aos.js' %}"></script>
+  <script src="{% static 'homescreen/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'homescreen/js/smoothscroll.js' %}"></script>
+  <script src="{% static 'homescreen/js/custom.js' %}"></script>
+
+
+</body>
+</html>
