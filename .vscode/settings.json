@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\namba\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+    "python.pythonPath": "d:\\CSE\\course files\\Projects\\GreetMacha\\myvenv\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }

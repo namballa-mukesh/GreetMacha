@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'GreetMacha.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'greetmacha',
+        'NAME': 'GreetMacha',
         'USER': 'dev1',
         'PASSWORD': 'complexpw123',
         'HOST': 'localhost',

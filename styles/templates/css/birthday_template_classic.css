@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.welcome-area{
+  padding-top:10%;
+  padding-bottom:10%;
+}
+.frame{
+  position:relative;
+}
+.frame img{
+  width:100%;
+  height:100%;
+}
+.frame:before{
+  position:absolute;
+  content:'';
+  right:-30px;
+  top:30px;
+  border:10px solid rgba(255,255,255,0.5);
+  width:100%;
+  height:100%;
+}
+body{
+  background:#F9FBFC;
+}
+.text-greetings{
+  padding-top:20%;
+}
+.text-greetings h1{
+  font-family: 'Great Vibes', cursive;
+  color:black;
+  font-size:5em;
+}
+.text-greetings span{
+  font-family: 'Great Vibes', cursive;
+  font-size:2em;
+}
+.message{
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 0;
+}
